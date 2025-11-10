@@ -1,0 +1,52 @@
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scanner QR Code</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="body">
+    <div style="margin: 40px; text-align: center;">
+    <h1><span style="background: linear-gradient(to bottom, rgb(43, 5, 179), rgb(76, 49, 253), rgb(91, 117, 250));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;">QR</span> Code Scanner</h1>
+</div>
+<div class="div-1">
+    <div class="div-2">
+    <div class="menu">
+        <button id="cameraMode" class="active">📷 عکس بگیر</button>
+        <button id="galleryMode">🖼️ گالری</button>
+      </div>
+  
+       <!-- حالت دوربین -->
+    <div id="cameraContainer">
+        <div id="reader" style="width: 300px; margin: auto;"></div>
+      </div>
+  
+      <!-- حالت گالری -->
+      <div id="galleryContainer" style="display: none;">
+        <br>
+        <br>
+        <input type="file" id="fileInput" accept="image/*" />
+        <p style="font-size: 15px;">یک تصویر انتخاب کن تا QR آن شناسایی شود.</p>
+      </div>
+  
+      <p id="result"></p>
+    </div>
+
+</div>
+</div>
+<div id="reader-temp" style="width: 1px; height: 1px; opacity: 0;"></div>
+
+ 
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  
+
+</body>
+</html>
+
